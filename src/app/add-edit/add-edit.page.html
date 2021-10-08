@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+ <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Expenses
@@ -13,8 +13,8 @@
     </ion-toolbar>
   </ion-header>
   
-  <ion-item>
-  <!-- <ion-grid>
+  <ion-item >
+  <ion-grid>
     <ion-row>
       <ion-col>
         <ion-input type="text" placeholder="Enter input"></ion-input>
@@ -24,26 +24,27 @@
         <ion-input type="number" placeholder="Enter Amount"></ion-input>    
       </ion-col>
     </ion-row>
-  </ion-grid> -->
+  </ion-grid>
  
  
     
   
-    <!-- <ion-datetime displayFormat="MMM D, YYYY" min="2005" max="2021" value="2008-09-02"></ion-datetime> -->
-    
-    <!-- <ion-textarea placeholder="Enter more information here..."></ion-textarea> -->
-  <!-- <ion-item> -->
-    <!-- <ion-icon name="create-outline"></ion-icon> -->
-    <!-- <ion-icon name="information-circle-outline"></ion-icon> -->
+    <ion-datetime displayFormat="MMM D, YYYY" min="2005" max="2021" value="2008-09-02"></ion-datetime>
+    <br>
+    <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+  <ion-item>
+    <ion-icon name="create-outline"></ion-icon>
+    <ion-icon name="information-circle-outline"></ion-icon>
+  </ion-item>
   </ion-item>
   
-  
     
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button [routerLink]="['/add-edit']">
-        <ion-icon name="add"></ion-icon>
+     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add" ></ion-icon>
       </ion-fab-button>
     </ion-fab> 
   
-        
-</ion-content>
+    <ion-button shape="round" (click)="saveBtn()">Save</ion-button>
+  
+</ion-content>  
